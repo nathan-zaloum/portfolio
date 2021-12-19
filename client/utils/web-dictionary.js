@@ -19,11 +19,11 @@ export const images = [
 export const links = [
     'https://dungeon-slither.herokuapp.com',
     'https://hangul-nathan.herokuapp.com',
-    'https://nathan-portfolio.herokuapp.com'
+    'https://nathanzaloum.herokuapp.com'
 ]
 
 export const buttons = [
     'dungeon-slither.herokuapp.com',
     'hangul-nathan.herokuapp.com',
-    'nathan-portfolio.herokuapp.com'
+    'nathanzaloum.herokuapp.com'
 ]
