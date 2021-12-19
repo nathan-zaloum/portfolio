@@ -13,7 +13,7 @@ export const descriptions = [
 export const images = [
     'images/portfolio/dungeon-slither.png',
     'images/portfolio/hangul.png',
-    'https://picsum.photos/500/300/?image=2'
+    'images/portfolio/portfolio.png'
 ]
 
 export const links = [

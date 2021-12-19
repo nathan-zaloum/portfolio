@@ -440,15 +440,47 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Home = function Home() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "background"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "home-wrapper"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "page"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "text-container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, "Hi there, I'm Nathan Zaloum."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, "I'm a full stack software developer with a background in Game and App development."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "tech-stack"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "tech"
+  }, "HTML"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "tech"
+  }, "CSS/SASS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "tech"
+  }, "C#"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "tech"
+  }, "React"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "tech"
+  }, "Handlebars"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "tech"
+  }, "Redux"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "tech"
+  }, "Node.js"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "tech"
+  }, "Express.js"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "tech"
+  }, "Jest"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "tech"
+  }, "Knex/SQLite3"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "tech"
+  }, "REST API"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "tech"
+  }, "Unity"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "tech"
+  }, "Vuforia"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "gif-container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     src: "images/coding-graphic.gif"
-  }))));
+  })))));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Home);
@@ -625,7 +657,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 var titles = ['Dungeon Slither', 'Hangul', 'Portfolio Website'];
 var descriptions = [["A week long project I worked on with 3 others at Dev Academy."], ["A project I made to help teach myself Korean."], ["My portfolio website I made to showcase my work."]];
-var images = ['images/portfolio/dungeon-slither.png', 'images/portfolio/hangul.png', 'https://picsum.photos/500/300/?image=2'];
+var images = ['images/portfolio/dungeon-slither.png', 'images/portfolio/hangul.png', 'images/portfolio/portfolio.png'];
 var links = ['https://dungeon-slither.herokuapp.com', 'https://hangul-nathan.herokuapp.com', 'https://nathan-portfolio.herokuapp.com'];
 var buttons = ['dungeon-slither.herokuapp.com', 'hangul-nathan.herokuapp.com', 'nathan-portfolio.herokuapp.com'];
 
