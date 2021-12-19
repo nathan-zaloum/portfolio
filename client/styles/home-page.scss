@@ -1,0 +1,40 @@
+@import './color-themes.scss';
+
+.home-wrapper {
+    min-height: calc(100vh - 65px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    @include themed() {
+        background-color: t($bg);
+        color: t($text);
+    }
+
+    .page {
+        display: flex;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        max-width: 1200px;
+    }
+
+    .gif-container {
+        position: absolute;
+        top: calc(50vh - 15vw);
+        right: 10vw;
+        width: 30vw;
+        height: 30vw;
+        overflow-x: hidden;
+        display: flex;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: #6dbac6;
+        box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+
+        img {
+            height: 80%;
+            width: auto;
+            align-self: center;
+        }
+    }
+}

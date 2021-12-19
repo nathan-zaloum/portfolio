@@ -1,0 +1,138 @@
+@import './color-themes.scss';
+
+.nav-wrapper {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    // background-color: $dark-background;
+    @include themed() {
+        background-color: t($bg);
+    }
+
+    nav {
+        display: flex;
+        width: 90%;
+    }
+    
+    ul li a {
+        margin-left: 1.5em;
+    }
+    
+    a.logo {
+        margin-right: auto;
+    }
+    
+    ul {
+        display: flex;
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    a {
+        text-decoration: none;
+        position: relative;
+        font-size: 1.25em;
+        // color: $dark-foreground;
+        @include themed() {
+            color: t($text);
+        }
+    }
+    
+    a::after {
+        content:"";
+        top: 90%;
+        border-bottom: 2px solid $brand--yellow;
+        transition: all 0.35s;
+        position: absolute;
+    }
+    
+    a:hover::after {
+        transition: all 0.35s;
+    }
+    
+    a::after {
+        right: 50%;
+        left: 50%;
+    }
+    
+    a:hover::after {
+        right: 0;
+        left: 0;
+    }
+    
+    a:hover {
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 1024px) {
+    .nav-wrapper {
+        height: auto;
+
+        nav {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        a.logo {
+            margin-top: 1.5em;
+            margin-bottom: 1.5em;
+            margin-right: 0px;
+        }
+    
+        ul {
+            width: 100%;
+            margin-bottom: 1em;
+            justify-content: space-between;
+        }
+    
+        ul li a {
+            margin-left: 0px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-wrapper {
+        a.logo {
+            margin: 1.5em;
+        }
+    
+        ul {
+            flex-direction: column;
+        }
+    
+        ul li {
+            margin: 0.3em;
+            text-align: center;
+        }
+    
+        ul li a {
+            margin-left: 0px;
+        }
+    }
+}
+
+.mode-switch {
+    position: fixed;
+    right: 5vw;
+    bottom: 5vw;
+    height: 50px;
+    width: 50px;
+    border: 2px solid;
+    border-radius: 15px;
+    cursor: pointer;
+    @include themed() {
+        background-color: t($toggle-bg);
+    }
+
+    img {
+        position: absolute;
+        top: 30%;
+        left: 30%;
+        height: 40%;
+        width: 40%;
+    }
+}

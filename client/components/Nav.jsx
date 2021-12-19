@@ -1,34 +1,24 @@
-import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
-
-import { getNav } from '../apis/dnd'
-import { dataToArray, formatLink } from '../utils'
+import React from 'react'
+import { useNavigate } from 'react-router'
 
 const Nav = () => {
+  const navigate = useNavigate()
 
-  const loadingState = [ 'Loading...' ]
-  const [links, setLinks] = useState(loadingState)
-
-  const refreshList = () => {
-    return getNav()
-      .then(data => { return setLinks(dataToArray(data)) })
-      .catch(err => {
-        console.log(err.message)
-        return setLinks([ 'Error when loading navigation links' ])
-      })
+  const navHandle = (link) => {
+    navigate(link)
   }
 
-  useEffect(() => {
-    refreshList()
-  }, [])
-
   return (
-    <nav className='side-bar'>
-        <Link key='home' to='/'><div className='nav-button'>Home</div></Link>
-        {links.map(link => (
-          <Link key={link} to={link}><div className='nav-button'>{formatLink(String(link))}</div></Link>
-        ))}
-    </nav>
+    <div className='nav-wrapper'>
+      <nav>
+        <a onClick={() => navHandle('/')} className='logo'>Nathan Zaloum</a>
+        <ul>
+          <li><a onClick={() => navHandle('/portfolio')}>Portfolio</a></li>
+          <li><a onClick={() => navHandle('/games')}>Games</a></li>
+          <li><a onClick={() => navHandle('/apps')}>Apps</a></li>
+        </ul>
+      </nav>
+    </div>
   )
 }
 

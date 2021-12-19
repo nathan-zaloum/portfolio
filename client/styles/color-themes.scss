@@ -1,0 +1,49 @@
+$bg: 'bg';
+$card-bg: 'card-bg';
+$card-border: 'card-border';
+$toggle-bg: 'toggle-bg';
+$toggle-icon: 'toggle-icon';
+$text: 'text';
+$link: 'link';
+$brand-primary: 'brand-primary';
+
+$themes: (
+    light: (
+        bg: $bg--light,
+        card-bg: $bg--card--light,
+        card-border: $card-border--light,
+        toggle-bg: $bg--toggle--light,
+        toggle-icon: $toggle-icon--light,
+        text: $text--light,
+        link: $brand--yellow,
+        brand-primary: $brand--yellow
+    ),
+    dark: (
+        bg: $bg--dark,
+        card-bg: $bg--card--dark,
+        card-border: $card-border--dark,
+        toggle-bg: $bg--toggle--dark,
+        toggle-icon: $toggle-icon--dark,
+        text: $text--dark,
+        link: $brand--yellow,
+        brand-primary: $brand--yellow
+    ),
+);
+
+@mixin themed() {
+    @each $theme, $map in $themes {
+        .theme--#{$theme} & {
+            $theme-map: () !global;
+            @each $key, $submap in $map {
+            $value: map-get(map-get($themes, $theme), '#{$key}');
+            $theme-map: map-merge($theme-map, ($key: $value)) !global;
+            }
+            @content;
+            $theme-map: null !global;
+        }
+    }
+}
+  
+@function t($key) {
+    @return map-get($theme-map, $key);
+}

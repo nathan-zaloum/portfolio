@@ -1,0 +1,30 @@
+@import './variables.scss';
+@import './color-themes.scss';
+@import './navigation.scss';
+@import './home-page.scss';
+@import './list-page.scss';
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    @include themed() {
+        background-color: t($bg);
+    }
+}
