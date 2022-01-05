@@ -13,14 +13,17 @@ const Home = () => {
               <div className='tech'>HTML</div>
               <div className='tech'>CSS/SASS</div>
               <div className='tech'>C#</div>
+              <div className='tech'>Ruby</div>
               <div className='tech'>React</div>
               <div className='tech'>Handlebars</div>
+              <div className='tech'>Ruby on Rails</div>
               <div className='tech'>Redux</div>
               <div className='tech'>Node.js</div>
               <div className='tech'>Express.js</div>
               <div className='tech'>Jest</div>
               <div className='tech'>Knex/SQLite3</div>
               <div className='tech'>REST API</div>
+              <div className='tech'>Bootstrap</div>
               <div className='tech'>Unity</div>
               <div className='tech'>Vuforia</div>
             </div>
