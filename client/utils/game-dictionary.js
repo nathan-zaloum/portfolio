@@ -5,7 +5,8 @@ export const titles = [
     'Hide and Seek',
     'Summoners',
     'Corridor Frenzy',
-    'Tic Tac Toe'
+    'Tic Tac Toe',
+    'Overturned'
 ]
 
 export const descriptions = [
@@ -20,9 +21,12 @@ export const descriptions = [
      `The theme for the jam was "He, she, they, walk among us".`],
     [`Summoners is a game made with a team over 48 hours during Global Game Jam 2016.`,
      `Left click to summon your minions. Right click to sacrifice them. A game of strategy to see how long you can last against the paladins of the kingdom.`,
-     `The theme for the jam wa "Ritual"`],
+     `The theme for the jam was "Ritual"`],
     [`This game was made during World Skills 2016 over 8 hours.`],
     [`This game was made during my studies. It was my first ever game!`],
+    [`Overturned is a game made by myself over 48 hours for the Global Game Jam 2022.`,
+     `Make as many move as you can before you get stuck. Extend your options with pickups, but be careful not to cut yourself off.`,
+     `The theme for this jam was "Duality"`],
 ]
 
 export const images = [
@@ -32,7 +36,8 @@ export const images = [
     'images/games/hide-and-seek.png',
     'images/games/summoners.png',
     'images/games/corridor-frenzy.png',
-    'images/games/tic-tac-toe.png'
+    'images/games/tic-tac-toe.png',
+    'images/games/overturned.png'
 ]
 
 export const links = [
@@ -42,10 +47,12 @@ export const links = [
     'https://www.dropbox.com/s/q05e1suhqpl76a2/HideAndSeek.zip?dl=0',
     'https://www.dropbox.com/s/8mhgf1x07koxy6e/Summoners.zip?dl=0',
     'https://www.dropbox.com/s/vvpyblahooxucj2/CorridorFrenzyBuild.zip?dl=0',
-    'https://www.dropbox.com/s/31k4x0msu1g09xd/TicTacToeBuild.zip?dl=0'
+    'https://www.dropbox.com/s/31k4x0msu1g09xd/TicTacToeBuild.zip?dl=0',
+    'https://nathan-zaloum.itch.io/overturned'
 ]
 
 export const buttons = [
+    'Download',
     'Download',
     'Download',
     'Download',
