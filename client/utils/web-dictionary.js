@@ -26,15 +26,15 @@ export const images = [
 ]
 
 export const links = [
-    'https://dungeon-slither.herokuapp.com',
-    'https://hangul-nathan.herokuapp.com',
-    'https://nathanzaloum.herokuapp.com',
-    'https://gym-journey.herokuapp.com'
+    '',
+    '',
+    'https://nathanzaloum-4df974acbfdb.herokuapp.com/',
+    ''
 ]
 
 export const buttons = [
-    'dungeon-slither.herokuapp.com',
-    'hangul-nathan.herokuapp.com',
+    'Currently Unavailable',
+    'Currently Unavailable',
     'nathanzaloum.herokuapp.com',
-    'gym-journey.herokuapp.com'
+    'Currently Unavailable'
 ]
